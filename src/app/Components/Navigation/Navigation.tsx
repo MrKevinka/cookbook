@@ -3,14 +3,16 @@ import { navLinks } from "./NavLinks/navLinks";
 
 export const Navigation = () => {
   return (
-    <ul className="flex justify-around ">
-      {navLinks.map((link, id) => {
-        return (
-          <li key={id}>
-            <Link href={link.link}>{link.name}</Link>
-          </li>
-        );
-      })}
-    </ul>
+    <section className="absolute w-screen">
+      <ul className="flex justify-around ">
+        {navLinks.map((page, id) => {
+          return (
+            <li key={id}>
+              <Link href={page.link}>{page.name}</Link>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 };
