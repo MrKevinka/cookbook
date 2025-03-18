@@ -5,5 +5,5 @@ interface IntroProps {
 }
 
 export const Intro: FC<IntroProps> = ({ welcomeText }) => {
-  return <div className="text-center">{welcomeText}</div>;
+  return <p className="text-center">{welcomeText}</p>;
 };

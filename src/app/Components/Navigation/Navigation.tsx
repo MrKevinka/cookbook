@@ -3,7 +3,7 @@ import { navLinks } from "./NavLinks/navLinks";
 
 export const Navigation = () => {
   return (
-    <section className="absolute w-screen">
+    <section>
       <ul className="flex justify-around ">
         {navLinks.map((page, id) => {
           return (
