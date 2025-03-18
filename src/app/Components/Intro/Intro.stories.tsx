@@ -1,9 +1,10 @@
-import { Meta } from "storybook/internal/csf";
+import { Meta, StoryObj } from "@storybook/react";
+
 import { Intro } from "./Intro";
 
 export default {
-  title: "Components/WelcomeText",
   component: Intro,
+  title: "Components/WelcomeText",
   args: {
     welcomeText: "This is the welcome text!",
   },
