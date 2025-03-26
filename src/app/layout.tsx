@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navigation } from "./Components/Navigation/Navigation";
+import { Navigation } from "../app/Components/Navigation/Navigation";
 
 export const metadata: Metadata = {
   title: "Cookbook",
@@ -14,9 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen w-screen">
+      <body
+        className="flex flex-col h-screen w-screen"
+        cz-shortcut-listen="true"
+      >
         <Navigation />
-        <div className="h-full flex justify-center items-center">
+        <div className="h-full flex justify-around flex-col items-center">
           {children}
         </div>
       </body>
