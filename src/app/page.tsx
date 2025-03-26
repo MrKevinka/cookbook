@@ -1,5 +1,14 @@
-import { Intro } from "./Components/Intro/Intro";
+import { Intro } from "../app/Components/Intro/Intro";
+import { Slide } from "../app/Components/Slider/Slide/Slide";
 
 export default function Home() {
-  return <Intro welcomeText="Hello Cook" />;
+  return (
+    <>
+      <Slide
+        image={"https://picsum.photos/seed/picsum/200/300"}
+        href={"/fleisch"}
+      />
+      <Intro welcomeText="Hello Cook" />
+    </>
+  );
 }
