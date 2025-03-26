@@ -3,7 +3,7 @@ import { Slide } from "./Slide";
 
 export default {
   component: Slide,
-  title: "Components/Slider/Slide",
+  title: "Components/ImageSlider/Slide",
   args: {
     image: "https://picsum.photos/seed/picsum/200/300",
     href: "/fleisch",
