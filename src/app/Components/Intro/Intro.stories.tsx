@@ -4,9 +4,9 @@ import { Intro } from "./Intro";
 
 export default {
   component: Intro,
-  title: "Components/WelcomeText",
+  title: "Components/Intro",
   args: {
-    welcomeText: "This is the welcome text!",
+    welcomeText: "Hello Cook",
   },
 } satisfies Meta<typeof Intro>;
 
