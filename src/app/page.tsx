@@ -1,13 +1,11 @@
+"use client";
 import { Intro } from "../app/Components/Intro/Intro";
-import { Slide } from "../app/Components/Slider/Slide/Slide";
+import { ImageSlider } from "./Components/Slider/ImageSlider";
 
 export default function Home() {
   return (
     <>
-      <Slide
-        image={"https://picsum.photos/seed/picsum/200/300"}
-        href={"/fleisch"}
-      />
+      <ImageSlider />
       <Intro welcomeText="Hello Cook" />
     </>
   );
