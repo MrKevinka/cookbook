@@ -19,9 +19,7 @@ export default function RootLayout({
         cz-shortcut-listen="true"
       >
         <Navigation />
-        <div className="h-full flex justify-around flex-col items-center">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
