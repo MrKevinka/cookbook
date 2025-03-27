@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="flex flex-col h-screen w-screen"
+        className="flex flex-col h-screen w-screen gap-6"
         cz-shortcut-listen="true"
       >
         <Navigation />
