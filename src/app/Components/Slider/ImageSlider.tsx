@@ -32,7 +32,7 @@ export const ImageSlider = () => {
             />
             <Link
               href={image.link}
-              className="absolute bottom-8 right-[150px]  bg-black rounded-2xl p-3  hover:bg-red-500"
+              className="absolute bottom-8 md:right-[150px] right-[25px]  bg-black rounded-2xl p-3  hover:bg-red-500"
             >
               Mehr erfahren
             </Link>
