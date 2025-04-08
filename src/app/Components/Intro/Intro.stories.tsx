@@ -4,7 +4,7 @@ import { Intro } from "./Intro";
 
 export default {
   component: Intro,
-  title: "Components/Intro",
+  title: "Components/Atoms/Intro",
   args: {
     welcomeText: "Hello Cook",
   },
