@@ -4,7 +4,7 @@ import { FC } from "react";
 import { Pages } from "@/types/pageTypes";
 
 interface NavigationProps {
-  pages: Pages[];
+  pages?: Pages[];
 }
 
 export const Navigation: FC<NavigationProps> = ({ pages }) => {
