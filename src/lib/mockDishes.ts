@@ -2,7 +2,7 @@ export const mockDishes = [
   {
     src: "https://picsum.photos/200/300",
     dish: "Ein leckeres Gericht 1",
-    time: 10,
+
     difficulty: 3,
     link: "/",
   },

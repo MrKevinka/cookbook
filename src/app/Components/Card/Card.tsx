@@ -20,22 +20,24 @@ export const Card: FC<CardProps> = ({ dish }) => {
     return stars;
   };
   return (
-    <Link
-      className="flex flex-col gap-2 items-center justify-center border-white border-2 rounded-2xl bg-green-500 relative h-96 w-96"
-      href={dish.link ? dish.link : "/"}
-    >
-      <Image
-        src={dish.src ? dish.src : "https://picsum.photos/200/300"}
-        alt={""}
-        width={200}
-        height={300}
-        className="block h-full w-full object-cover rounded-t-2xl"
-      />
-
-      <span className=" text-xl">{dish.dish ? dish.dish : "test dish"}</span>
-      <section>
-        {renderStars()} | {dish.time ? dish.time : "999"} Min.
+    <div className="flex flex-col gap-2 justify-between items-center  border-white border-2 rounded-2xl bg-green-500 relative h-96 w-80">
+      <Link
+        href={dish.link ? dish.link : "/"}
+        className="relative w-full h-2/3"
+      >
+        <Image
+          src={dish.src ? dish.src : "https://picsum.photos/200/300"}
+          alt={""}
+          fill
+          className="block  object-cover rounded-t-2xl"
+        />
+      </Link>
+      <section className="flex flex-col mb-9 gap-6 items-center">
+        <span className="text-xl">{dish.dish ? dish.dish : "test dish"}</span>
+        <span>
+          {renderStars()} | {dish.time ? `${dish.time} Min.` : "N/A"}
+        </span>
       </section>
-    </Link>
+    </div>
   );
 };
