@@ -28,7 +28,7 @@ export const ImageSlider = () => {
             <Image
               src={image.src}
               alt={image.alt}
-              className="block h-full w-full object-cover relative"
+              className="block h-full w-full object-cover "
             />
             <Link
               href={image.link}
